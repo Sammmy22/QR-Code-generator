@@ -9,6 +9,25 @@
     <title>QR Code Generator</title>
   </head>
   <body>
+    <header><h2>QR Code Generator</h2></header>
+    <div id="main">
+      <div id="inputs">
+        <form action="/">
+          <input type="text" placeholder="Input Content" id="content" />
+          <label
+            >Size:
+            <select name="size" id="size">
+              <option value="">128 x 128</option>
+              <option value="">256 x 256</option>
+              <option value="">512 x 512</option>
+            </select>
+          </label>
+          <button type="submit" id="submit">GET!</button>
+        </form>
+      </div>
+      <hr />
+      <div id="qr"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
